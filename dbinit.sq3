@@ -1,0 +1,17 @@
+create table bbsdata (
+  id integer primary key,
+  userid varchar(20),
+  entry varchar(150),
+  imgfile varchar(260),
+  writedate integer
+);
+
+create table account (
+  id varchar(20) primary key,
+  hashed varchar(70),
+  salt varchar(10),
+  iconfile varchar(260)
+);
+
+insert into account values ('diplo', '7fba80a3642579984776939f13f769254fe1db36e9ca41d7b598e2c1d93ec52a', 'PQ', 'penguin.jpg');
+insert into account values ('allo', 'd12354b521bdc4bcd0de3959a378176112ef3e4d5343ba887c276d13d6d76e61', 'RS', 'bench.jpg');

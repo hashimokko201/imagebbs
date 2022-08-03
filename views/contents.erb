@@ -1,0 +1,14 @@
+Hello, <%= @u %> (<a href="/logout">logout</a>)
+<p>
+
+<table>
+  <%= @t %>
+</table>
+
+<hr>
+
+<form method="post" action="/new" enctype="multipart/form-data">
+  <input type="text" name="entry" size=50 maxlength=100><br>
+  <input type="file" name="file">
+  <input type="submit" value="Go">
+</form>
